@@ -1,0 +1,24 @@
+{
+  "name": "wxapp-meituan",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000w\u0000x\u0000a\u0000p\u0000p\u0000-\u0000m\u0000e\u0000i\u0000t\u0000u\u0000a\u0000n\u0000\r\u0000 \u0000",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxyCoder/wxapp-meituan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxyCoder/wxapp-meituan/issues"
+  },
+  "homepage": "https://github.com/xxyCoder/wxapp-meituan#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.16",
+    "moment": "^2.29.4"
+  }
+}

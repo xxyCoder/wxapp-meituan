@@ -1,0 +1,63 @@
+<scroll-view class="container">
+    <view class="header">
+        <view class="search {{searchFix ? 'searchStay' : ''}}">
+            <van-icon class="searchPic" name="search" />
+            <text class="keyWord"> {{ hotSearchWord }} </text>
+            <view class="btn">搜索</view>
+        </view>
+        <view class="wordsList">
+            <view class="listItem" wx:for="{{hotWords}}" wx-for-index="in" wx:key="in">
+                {{item}}
+            </view>
+        </view>
+    </view>
+    <view class="turnPic">
+        <swiper style="height: 400rpx;" indicator-dots="true" indicator-color="#e0e0e0" indicator-active-color="#ffcb3a">
+            <swiper-item class="item-wrap">
+                <view class="item" wx:for="{{turnData[0]}}" wx:for-index="in" wx:key="in">
+                    <image class="itemImg" src="{{item.imgUrl}}" />
+                    <text class="itemTitle">{{item.title}}</text>
+                </view>
+            </swiper-item>
+            <swiper-item class="item-wrap">
+                <view class="item" wx:for="{{turnData[1]}}" wx:for-index="in" wx:key="in">
+                    <image class="itemImg" src="{{item.imgUrl}}" />
+                    <text class="itemTitle">{{item.title}}</text>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="slide {{slideFix ? 'slideStay' : ''}}">
+        <view class="mitem-wrap">
+            <view class="mitem" style="background-color: {{slideFix ? '#f5f5f5' : '#fff'}};" wx:for="{{slideData}}" wx:for-index="in" wx:key="in">
+                {{item}}
+            </view>
+        </view>
+        <van-button class="moreOption" icon="apps-o" bindtap="showPopup" />
+    </view>
+    <view class="main">
+        <van-skeleton loading="{{loading}}" title avatar row="3" />
+        <van-skeleton loading="{{loading}}" title row="3" />
+        <view class="bitem" wx:for="{{foodData}}" wx:key="id">
+            <image class="left" src="{{item.imgUrl}}" />
+            <view class="right">
+                <view>
+                    <text class="bitemName">{{item.title}}</text>
+                </view>
+                <view class="r-content">
+                    <view class="r-left">
+                        <text class="mark">{{item.mark}}分 </text>
+                        <text class="sale">月售{{item.sale}}</text>
+                        <text class="avg">人均 ￥{{item.avg}}</text>
+                    </view>
+                    <view class="r-right">
+                        <text>{{item.time}} {{item.dist}}</text>
+                    </view>
+                </view>
+                <view class="tips">
+                    <text>{{item.tips}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

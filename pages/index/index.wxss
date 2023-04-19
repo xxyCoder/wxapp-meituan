@@ -1,0 +1,151 @@
+page {
+    padding: 20rpx;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+::-webkit-scrollbar {   /* 隐藏滚动条 */
+    display: none;
+}
+.searchStay {
+    position: fixed;
+    top: 0;
+    left: 10rpx;
+    right: 10rpx;
+    background-color: #fff;
+    z-index: 1;
+}
+/* 搜索头部 */
+.header .search {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 70rpx;
+    font-size: 25rpx;
+    border-radius: 40rpx;
+    border: 1rpx solid #ffd152;
+    overflow: hidden;
+}
+.search .searchPic {
+    height: 100%;
+    width: 30rpx;
+    margin: 10rpx;
+}
+.search .keyWord {
+    flex: 1;
+    color: #909090;
+}
+.search .btn {
+    width: 70rpx;
+    line-height: 70rpx;
+    padding: 6rpx 20rpx;
+    background-color: #ffd152;
+    text-align: center;
+    border-radius: 40rpx;
+}
+/* 头部 热词列表 */
+.header .wordsList {
+    display: flex;
+}
+.wordsList .listItem {
+    margin: 10rpx 10rpx 30rpx 0;
+    font-size: 25rpx;
+    padding: 10rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+}
+/* 轮播图 */
+.turnPic .item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: flex;
+}
+.turnPic .item {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    height: 200rpx;
+    margin: 0 20rpx;
+    width: 100rpx;
+}
+.item .itemImg {
+    height: 100rpx;
+    width: 100%;
+}
+.item .itemTitle {
+    font-size: 20rpx;
+    white-space: nowrap;
+}
+/* 滑动词条 */
+.slide {
+    position: relative;
+}
+.slideStay {
+    position: fixed;
+    top: 70rpx;
+    background-color: #fff;
+    left: 10rpx;
+    right: 10rpx;
+}
+.slide .mitem-wrap {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.mitem-wrap .mitem {
+    margin: 20rpx 10rpx;
+    padding: 6rpx 30rpx;
+    border-radius: 20rpx;
+    font-size: 30rpx;
+    color: #757575;
+}
+.mitem:last-child {
+    margin-right: 150rpx;
+}
+.slide .moreOption {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* 主体部分 */
+.main .bitem {
+    display: flex;
+    height: 200rpx;
+    width: 100%;
+    margin: 20rpx 0;
+    background-color: #fff;
+}
+.bitem .left {
+    display: block;
+    width: 200rpx;
+    height: 160rpx;
+    margin: 20rpx;
+}
+.bitem .right {
+    margin: 20rpx 0;
+    font-size: 20rpx;
+    color: #828282;
+    width: 100%;
+}
+.right .r-content {
+    display: flex;
+    padding: 10rpx;
+    justify-content: space-between;
+}
+.right .bitemName {
+    font-weight: bold;
+    font-size: 30rpx;
+}
+.right .mark {
+    color: #e15e16;
+    font-weight: bold;
+}
+.right .sale {
+    margin: 0 10rpx;
+}
+.right .tips {
+    border: 1rpx solid #c0445b;
+    display: inline-block;
+    color: #c0445b;
+    padding: 6rpx 12rpx;
+}
