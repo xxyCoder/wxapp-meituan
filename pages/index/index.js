@@ -29,7 +29,6 @@ Page({
         this.setData({
             show: true
         });
-        console.log(1);
     },
     onClose: function () {
         this.setData({

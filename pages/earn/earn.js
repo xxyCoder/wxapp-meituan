@@ -5,14 +5,33 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        myRice: 0,
+        diff: 0,
+        convert: 0,
+        imgUrl: '',
+        day:0
     },
-
+    // 获取米粒数据
+    getRiceData: function() {
+        wx.request({
+          url: 'https://www.fastmock.site/mock/af6587caf8a88c7264fa3efd8a6ce6d7/meituan/rice',
+          dataType: "json",
+          success: (res) => {
+              this.setData({
+                  myRice: res.data.myRice,
+                  diff: res.data.diff,
+                  convert: res.data.convert,
+                  imgUrl: res.data.imgUrl,
+                  day: res.data.day
+              });
+          }
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        this.getRiceData();
     },
 
     /**

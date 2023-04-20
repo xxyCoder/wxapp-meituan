@@ -1,1 +1,156 @@
-/* pages/earn/earn.wxss */
+page {
+    width: 100vw;
+    height: 100vh;
+    padding: 10rpx;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom,#faf0c5,#f6f6f6 30%);
+}
+
+.fontRed {
+    color: #f65d2e
+}
+.whiteCircle {
+    display: inline-block;
+    background-color: white;
+    color: #fc5331;
+    text-align: center;
+    line-height: 40rpx;
+    height: 40rpx;
+    width: 40rpx;
+    border-radius: 50%;
+}
+.bgMWhite {
+    background-color: #fcfdea;
+}
+.fontBold {
+    font-weight: bold;
+}
+.fontOrange {
+    color: #e99f5d;
+}
+
+.header {
+    width: 100%;
+}
+.header .myRice {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #f8d769;
+    border-radius: 20rpx;
+    box-sizing: border-box;
+    padding: 50rpx 30rpx;
+}
+.myRice .left {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.myRice .right {
+    width: 300rpx;
+}
+.right image {
+    width: 100%;
+    height: 100%;
+}
+.left .mine {
+    font-size: 40rpx;
+}
+.left .number {
+    font-size: 200rpx;
+}
+/* 优惠券 */
+.header .discount {
+    display: flex;
+    margin: 30rpx 0;
+    box-sizing: border-box;
+    padding: 20rpx;
+    background-color: #f9dc58;
+    border-radius: 20rpx;
+}
+.discount .d-left {
+    display: flex;
+    flex-direction: column;
+    color: #c7622d;
+    font-size: 30rpx;
+    justify-content: center;
+    width: 100rpx;
+    align-items: center;
+    padding: 20rpx;
+}
+.discount .d-right {
+    display: flex;
+    justify-content: space-between;
+}
+.d-right .dr-left {
+    display: flex;
+    flex-direction: column;
+    font-size: 25rpx;
+    justify-content: center;
+    padding-right: 30rpx;
+    margin-right: 10rpx;
+    border-right: 1rpx dashed #f0dd7a;
+}
+.d-right .dr-right {
+    display: flex;
+    align-items: center;
+    margin-right: 5rpx;
+}
+.dr-right .drr-btn {
+    background-color: #fc5331;
+    width: 200rpx;
+    text-align: center;
+    height: 50rpx;
+    border-radius: 20rpx;
+    color: #fff;
+    padding: 6rpx 12rpx;
+}
+/* 任务列表 */
+.task {
+    background-color: #fff;
+    border-radius: 20rpx;
+    padding: 30rpx 20rpx;
+    margin-bottom: 20rpx;
+    box-sizing: border-box;
+}
+.task .t-header {
+    color: #8a8a8a;
+    font-size: 20rpx;
+    height: 60rpx;
+    border-bottom: 2px solid #f8f8f8;
+}
+.t-header .title {
+    font-size: 30rpx;
+    color: #000;
+    margin-right: 20rpx;
+}
+.t-body .b-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+.b-item image {
+    height: 100rpx;
+    width: 100rpx;
+    background-color: #fdf3ca;
+    border-radius: 10rpx;
+}
+.b-item .txt {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 30rpx;
+    color: #8b8b8b;
+    margin-left: 10rpx;
+}
+.txt .title {
+    color: #000;
+}
+.b-item .b-btn {
+    background-color: #f8ce5b;
+    padding: 6rpx 12rpx;
+    height: 50rpx;
+    border-radius: 20rpx;
+}

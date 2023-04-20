@@ -1,2 +1,63 @@
-<!--pages/earn/earn.wxml-->
-<text>pages/earn/earn.wxml</text>
+<scroll-view>
+    <view class="header">
+        <view class="myRice">
+            <view class="left">
+                <text class="mine">我的米粒 > </text>
+                <text class="number">{{myRice}}</text>
+                <text class="tips">仅差<text class="fontRed">{{diff}}</text>米粒，兑<text class="fontRed">{{convert}}</text>元红包</text>
+            </view>
+            <view class="right">
+                <image src="{{imgUrl}}"/>
+            </view>
+        </view>
+        <view class="discount">
+            <view class="d-left bgMWhite">
+                <text>米粒</text>
+                <text>专享</text>
+            </view>
+            <view class="d-right bgMWhite">
+                <view class="dr-left">
+                    <text style="font-size: 40rpx;">加入本地福利群</text>
+                    <text><text class="fontRed">30元</text>神券礼包等你来拿</text>
+                </view>
+                <view class="dr-right">
+                    <view class="drr-btn">
+                        领取红包 <text class="whiteCircle"> > </text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="task">
+        <view class="t-header">
+            <text class="fontBold title">做任务赚米粒</text>
+            <text>今天能赚<text class="fontOrange">360</text>米粒</text>
+        </view>
+        <view class="t-body">
+            <view class="b-item">
+                <image src="/images/rice.png" />
+                <view class="txt">
+                    <text class="fontBold title">今日一单美食</text>
+                    <text>每单实付满30元，今天24点截止</text>
+                </view>
+                <view class="b-btn fontBold">领任务</view>
+            </view>
+            <view class="b-item">
+                <image src="/images/rice.png" />
+                <view class="txt">
+                    <text class="fontBold title">连续签到第{{day}}天</text>
+                    <text>明日可开宝箱</text>
+                </view>
+                <view class="b-btn fontBold">领任务</view>
+            </view>
+            <view class="b-item">
+                <image src="/images/rice.png" />
+                <view class="txt">
+                    <text class="fontBold title">三餐领米粒</text>
+                    <text>早7-9点，午10-14点，晚16-21点</text>
+                </view>
+                <view class="b-btn fontBold">领米粒</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
