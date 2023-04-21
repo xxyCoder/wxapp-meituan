@@ -5,14 +5,34 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        avatar: '',
+        username: '',
+        phone:'',
+        rice: 0,
+        packet: 0,
+        money: 0
     },
-
+    // 请求用户信息
+    getUserInfo: function() {
+        wx.request({
+          url: 'https://www.fastmock.site/mock/af6587caf8a88c7264fa3efd8a6ce6d7/meituan/mine',
+          success: (res) => {
+              this.setData({
+                  avatar: res.data.avatar,
+                  username: res.data.username,
+                  phone: res.data.phone,
+                  rice: res.data.rice,
+                  packet: res.data.packet,
+                  money: res.data.money
+              });
+          }
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        this.getUserInfo();
     },
 
     /**

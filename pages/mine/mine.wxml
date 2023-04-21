@@ -1,2 +1,60 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<scroll-view class="mine">
+    <view class="m-header">
+        <image src="{{avatar}}"/>
+        <view class="info">
+            <text class="name">{{username}}</text>
+            <view class="phone">
+                <text>{{phone}}</text>
+                <button>修改</button>
+            </view>
+        </view>
+    </view>
+    <swiper style="height: 100rpx;" class="adv" circular="true" autoplay="true" interval="4000" circular="true" vertical="true" easing-function="easeInOutCubic">
+        <swiper-item>
+            <text>今天下单一单美食外卖，赚350米粒</text>
+            <text class="btn">领取</text>
+        </swiper-item>
+        <swiper-item>
+            <text>连续签到第三天，可开惊喜宝箱</text>
+            <text class="btn">去签到</text>
+        </swiper-item>
+    </swiper>
+    <view class="ops">
+        <view class="o-item">
+            <view>
+                <image src="/images/rice.png"/>
+                <text>我的米粒 {{ rice }}，可兑换红包</text>
+            </view>
+            <text>></text>
+        </view>
+        <view class="o-item">
+            <view>
+                <image src="/images/money.png"/>
+                <text>美团红包 {{ packet }}张</text>
+            </view>
+            <text>></text>
+        </view>
+        <view class="o-item">
+            <view>
+                <image src="/images/money.png"/>
+                <text>商家代金券</text>
+            </view>
+            <text>></text>
+        </view>
+        <view class="o-item">
+            <view>
+                <image src="/images/money.png"/>
+                <text>拼好饭代金券</text>
+            </view>
+            <text>></text>
+        </view>
+        <view class="o-item">
+            <view>
+                <image src="/images/money.png"/>
+                <text>津贴余额{{ money }}元</text>
+            </view>
+            <text>></text>
+        </view>
+    </view>
+    <button class="out">退出账号</button>
+</scroll-view>

@@ -1,2 +1,12 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<van-tabs active="{{ active }}" color="#fedf4c" title-active-color="#fedf4c">
+    <van-tab title="全部订单">
+        <van-empty description="一个订单都没有" />
+        <button bindtap="goHome" class="go">去逛逛</button>
+    </van-tab>
+    <van-tab title="待评价">
+        <van-empty description="没有待评价订单" />
+    </van-tab>
+    <van-tab title="退款">
+        <van-empty description="没有退款订单" />
+    </van-tab>
+</van-tabs>

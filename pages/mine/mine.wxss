@@ -1,1 +1,89 @@
-/* pages/mine/mine.wxss */
+.mine {
+    width: 100vw;
+    height: 100%;
+}
+/* 头部 */
+.mine .m-header {
+    height: 150rpx;
+    display: flex;
+    align-items: center;
+    background-color: #fedf4c;
+    box-sizing: border-box;
+    padding: 20rpx;
+}
+.m-header image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+.m-header .info {
+    flex: 1;
+    font-size: 30rpx;
+}
+.info .name {
+    font-weight: bold;
+}
+.info .phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.info .phone text {
+    font-size: 25rpx;
+    margin-right: 10rpx;
+}
+.info .phone button {
+    background-color: #d4d4d4;
+    font-size: 20rpx;
+    margin: 0;
+}
+/* 纵向滚动 */
+.mine .adv {
+    box-sizing: content-box;
+    margin: 10rpx;
+    border-radius: 20rpx;
+    background-color: #f3c68b;
+}
+.adv swiper-item {
+    box-sizing: border-box;
+    padding: 20rpx;
+    font-size: 25rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.adv swiper-item text {
+    display: 1;
+}
+.adv .btn {
+    display: inline-block;
+    border: 1rpx solid orange;
+    height: 30rpx;
+    width: 100rpx;  /* 防止轮播图按钮宽度不一致导致看起来在抖动 */
+    text-align: center;
+    padding: 4rpx 12rpx;
+    color: orange;
+}
+/* 多个选择条 */
+.mine .ops {
+    box-sizing: border-box;
+    padding: 20rpx;
+}
+.ops .o-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25rpx;
+    border-bottom: 1rpx solid rgb(209, 206, 206);
+    padding: 10rpx 0;
+}
+.ops .o-item view {
+    display: flex;
+    align-items: center;
+}
+.o-item image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 10rpx;
+}

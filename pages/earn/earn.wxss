@@ -1,6 +1,6 @@
 page {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     padding: 10rpx;
     box-sizing: border-box;
     background: linear-gradient(to bottom,#faf0c5,#f6f6f6 30%);

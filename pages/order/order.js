@@ -5,9 +5,14 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        active: 0
     },
-
+    // 点击跳转
+    goHome: function() {
+        wx.switchTab({
+          url: '/pages/index/index' // 路径是app.json中tabBar list中的路径前面加/
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */

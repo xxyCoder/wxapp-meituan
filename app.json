@@ -45,7 +45,10 @@
         "van-icon": "@vant/weapp/icon/index",
         "van-button": "@vant/weapp/button/index",
         "van-popup": "@vant/weapp/popup/index",
-        "van-skeleton": "@vant/weapp/skeleton/index"
+        "van-skeleton": "@vant/weapp/skeleton/index",
+        "van-empty": "@vant/weapp/empty/index",
+        "van-tab": "@vant/weapp/tab/index",
+        "van-tabs": "@vant/weapp/tabs/index"
     },
     "sitemapLocation": "sitemap.json"
 }
